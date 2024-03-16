@@ -1,9 +1,11 @@
 import Header from './Header';
+import Skills from './Skills';
 
 export const Home = () => {
   return (
-    <div className="h-screen">
+    <div>
       <Header />
+      <Skills />
     </div>
   );
 };
