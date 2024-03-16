@@ -1,40 +1,49 @@
+import {
+  FaFacebookSquare,
+  FaYoutubeSquare,
+  FaInstagramSquare,
+  FaLinkedin,
+} from 'react-icons/fa';
+
 const Footer = () => {
-  const getCurrentYear = () => {
-    return new Date().getFullYear();
-  };
+  const currentYear = new Date().getFullYear();
   return (
     <>
-      <footer className="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
-        <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © {getCurrentYear()}
-            <a href="https://flowbite.com/" className="hover:underline">
-              Flowbite™
-            </a>
-            . All Rights Reserved.
-          </span>
-          <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-            <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
-                About
+      <footer className="p-4  bg-black">
+        <div className="w-full flex flex-col items-center justify-around border-t py-8  md:flex-row">
+          <p className="mb-4 text-center text-white font-normal md:mb-0">
+            &copy; {currentYear} Ripion Chakma. All Rights Reserved.
+          </p>
+          <div>
+            <h2 className="text-white text-center">Follow Me</h2>
+            <hr />
+            <div className="flex lg:space-x-4 md:space-x-4 space-x-2 mt-2">
+              <a
+                className="lg:text-2xl md:text-2xl text-xl text-gray-500"
+                href="https://www.facebook.com"
+              >
+                <FaFacebookSquare />
               </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
-                Privacy Policy
+              <a
+                className="lg:text-2xl md:text-2xl text-xl text-gray-500"
+                href="https://www.instagram.com"
+              >
+                <FaInstagramSquare />
               </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline me-4 md:me-6">
-                Licensing
+              <a
+                className="lg:text-2xl md:text-2xl text-xl text-gray-500"
+                href="https://www.linkedin.com"
+              >
+                <FaLinkedin />
               </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Contact
+              <a
+                className="lg:text-2xl md:text-2xl text-xl text-gray-500"
+                href="https://www.youtube.com"
+              >
+                <FaYoutubeSquare />
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </footer>
     </>
