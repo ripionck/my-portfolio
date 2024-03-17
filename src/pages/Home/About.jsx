@@ -1,12 +1,16 @@
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 
-const Header = () => {
+const About = () => {
   return (
     <>
-      <section className="flex flex-col md:flex-row items-center justify-center py-8 px-4">
-        {/* Left side */}
+      <div className="flex flex-col md:flex-row items-center justify-center py-8 px-4">
         <div className="md:w-1/2">
-          <div className="text-center md:text-left">
+          <div
+            className="text-left md:pl-8"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <p className="flex items-center">
               <FaAngleLeft />
               Hello, World
@@ -18,23 +22,30 @@ const Header = () => {
               me to create seamless experiences for users, from the server to
               the screen.
             </p>
-            <a className="border border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            <a
+              href="#resume"
+              className="border border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
               Resume
             </a>
           </div>
         </div>
 
-        {/* Right side */}
-        <div className="md:w-1/2 md:pl-8">
+        <div
+          className="md:w-1/2 md:pl-8"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="3000"
+        >
           <img
             src="https://i.ibb.co/VJKPFq8/017083928.png"
             alt="Profile"
             className="rounded-lg shadow-md"
           />
         </div>
-      </section>
+      </div>
     </>
   );
 };
 
-export default Header;
+export default About;

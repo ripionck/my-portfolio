@@ -1,11 +1,13 @@
-import Header from './Header';
+import About from './About';
 import Skills from './Skills';
+import Projects from './projects/Projects';
 
 export const Home = () => {
   return (
     <div>
-      <Header />
+      <About />
       <Skills />
+      <Projects />
     </div>
   );
 };
