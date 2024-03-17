@@ -11,28 +11,33 @@ const ELit = () => {
               Project Description
             </h2>
             <p className="text-gray-500 mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              euismod pulvinar lorem, vitae lobortis eros interdum at.
+              The book store website is being developed using a tech stack that
+              includes Django REST Framework for backend functionality, React
+              for front-end user interface, and Tailwind CSS for styling.
+              Postman is utilized for comprehensive API testing to ensure
+              seamless communication between the front-end and the PostgreSQL
+              database backend. This integrated approach ensures a robust and
+              efficient development process for the bookstore project.
             </p>
             <h2 className="text-gray-500 text-2xl font-semibold mb-4">
               Functionalities
             </h2>
             <ul className="list-disc list-inside text-gray-500 mb-4">
               <li>
-                Developed a secure user registration system with email
-                verification for account activation.
+                Developed a book store website using React and Django REST
+                framework for API creation.
               </li>
               <li>
-                Implemented admin functionalities for train management and
-                dynamic scheduling.
+                Implemented JWT Token authentication for user, admin, and
+                publisher login and registration.
               </li>
               <li>
-                Created a user-friendly passenger profile system with NID
-                validation.
+                Created a dynamic book catalog allowing users to browse, search,
+                and filter books.
               </li>
               <li>
-                Enabled features for filtering trains, secure money deposits,
-                seat booking, and train reviews with user restrictions.
+                Enabled users to place orders securely, with features like
+                shopping cart functionality for convenient book purchasing.
               </li>
             </ul>
             <div className="flex space-x-4">
@@ -55,27 +60,27 @@ const ELit = () => {
             </div>
           </div>
 
-          {/* Right Side: Images */}
-          <div className="grid grid-cols-2 gap-4">
+          {/* -------------Images-------------------- */}
+          <div className="grid grid-cols-2 gap-4 image-container">
             <img
-              src="/image1.jpg"
-              alt="Project Image"
-              className="w-full h-auto rounded-md"
+              src="https://i.ibb.co/6Hg3Qx2/E-Lit-Emporium.png"
+              alt="E-Lit-Emporium"
+              className="image w-full h-auto rounded-md"
             />
             <img
-              src="/image2.jpg"
-              alt="Project Image"
-              className="w-full h-auto rounded-md"
+              src="https://i.ibb.co/Pwz7V7Y/E-Lit-Emporium-Register.png"
+              alt="Register"
+              className="image w-full h-auto rounded-md"
             />
             <img
-              src="/image3.jpg"
-              alt="Project Image"
-              className="w-full h-auto rounded-md"
+              src="https://i.ibb.co/Hr1Xmkb/E-Lit-Emporium-Profile.png"
+              alt="Profile"
+              className="image w-full h-auto rounded-md"
             />
             <img
-              src="/image4.jpg"
-              alt="Project Image"
-              className="w-full h-auto rounded-md"
+              src="https://i.ibb.co/NrnmsXf/E-Lit-Emporium-All-Books.png"
+              alt="All Books"
+              className="image w-full h-auto rounded-md"
             />
           </div>
         </div>

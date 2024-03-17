@@ -45,7 +45,7 @@ const Skills = () => {
             </ul>
           </div>
         </div>
-        <div className="md:w-1/2 md:pl-12 pt-8 md:pt-0">
+        <div className="md:w-1/2 md:pl-12 pt-8 md:pt-0 px-4">
           <div
             className="flex gap-8 text-5xl "
             data-aos="fade-down"

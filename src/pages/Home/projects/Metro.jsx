@@ -9,28 +9,30 @@ const Metro = () => {
             Project Description
           </h2>
           <p className="text-gray-500 mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            euismod pulvinar lorem, vitae lobortis eros interdum at.
+            The train ticket booking system is being developed using Django,
+            Tailwind CSS, HTML, and PostgreSQL. These technologies collectively
+            facilitate the construction of a robust and dynamic platform for
+            managing train reservations and bookings.
           </p>
           <h2 className="text-gray-500 text-2xl font-semibold mb-4">
             Functionalities
           </h2>
           <ul className="list-disc list-inside text-gray-500 mb-4">
             <li>
-              Developed a book store website using React and Django REST
-              framework for API creation.
+              Developed a secure user registration system with email
+              verification for account activation.
             </li>
             <li>
-              Implemented JWT Token authentication for user, admin, and
-              publisher login and registration.
+              Implemented admin functionalities for train management and dynamic
+              scheduling.
             </li>
             <li>
-              Created a dynamic book catalog allowing users to browse, search,
-              and filter books.
+              Created a user-friendly passenger profile system with NID
+              validation.
             </li>
             <li>
-              Enabled users to place orders securely, with features like
-              shopping cart functionality for convenient book purchasing.
+              Enabled features for filtering trains, secure money deposits, seat
+              booking, and train reviews with user restrictions.
             </li>
           </ul>
           <a
@@ -46,24 +48,24 @@ const Metro = () => {
         {/* Right Side: Images */}
         <div className="grid grid-cols-2 gap-4">
           <img
-            src="/image1.jpg"
-            alt="Project Image"
-            className="w-full h-auto rounded-md"
+            src="https://i.ibb.co/bNFf8y4/Metro-Express-Home.png"
+            alt="Metro-Express-Home"
+            className="image w-full h-auto rounded-md"
           />
           <img
-            src="/image2.jpg"
-            alt="Project Image"
-            className="w-full h-auto rounded-md"
+            src="https://i.ibb.co/RN0RLdq/Metro-Express-Train-Information.png"
+            alt="Train-Information"
+            className="image w-full h-auto rounded-md"
           />
           <img
-            src="/image3.jpg"
-            alt="Project Image"
-            className="w-full h-auto rounded-md"
+            src="https://i.ibb.co/7vCKNs9/Metro-Express-Train-Search-Result.png"
+            alt="Train-Search-Result"
+            className="image w-full h-auto rounded-md"
           />
           <img
-            src="/image4.jpg"
-            alt="Project Image"
-            className="w-full h-auto rounded-md"
+            src="https://i.ibb.co/dpFWbVW/Metro-Express-Search-Result.png"
+            alt="Search-Result"
+            className="image w-full h-auto rounded-md"
           />
         </div>
       </div>
