@@ -6,17 +6,17 @@ const About = () => {
       <div className="flex flex-col md:flex-row items-center justify-center py-8 px-4">
         <div className="md:w-1/2">
           <div
-            className="text-left md:pl-8"
+            className="text-left"
             data-aos="fade-right"
             data-aos-easing="linear"
             data-aos-duration="1500"
           >
-            <p className="flex items-center">
+            <p className="flex items-center text-lg text-gray-600">
               <FaAngleLeft />
               Hello, World
               <FaAngleRight />
             </p>
-            <p className="text-lg text-gray-600 mb-4">
+            <p className="text-lg text-gray-600 my-4">
               My name is Ripion Chakma. I&apos;m a Backend Developer from
               Bangladesh. My passion for clean code and problem-solving drives
               me to create seamless experiences for users, from the server to
@@ -24,7 +24,7 @@ const About = () => {
             </p>
             <a
               href="#resume"
-              className="border border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="border border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500  py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             >
               Resume
             </a>

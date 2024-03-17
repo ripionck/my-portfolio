@@ -9,9 +9,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <>
-      <footer className="p-4  bg-black">
+      <footer className="p-4">
         <div className="w-full flex flex-col items-center justify-around border-t py-8  md:flex-row">
-          <p className="mb-4 text-center text-white font-normal md:mb-0">
+          <p className="mb-4 text-center text-gray-500 font-normal md:mb-0">
             &copy; {currentYear} Ripion Chakma. All Rights Reserved.
           </p>
           <div>

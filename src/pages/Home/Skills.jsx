@@ -15,14 +15,14 @@ import { BiLogoPostgresql } from 'react-icons/bi';
 const Skills = () => {
   return (
     <>
-      <p className="flex items-center">
+      <p className="flex items-center text-lg text-gray-600">
         <FaAngleLeft />
         Skills
         <FaAngleRight />
       </p>
-      <div className="flex flex-col md:flex-row items-center justify-center py-8 px-4">
+      <div className="flex flex-col md:flex-row items-center justify-center py-4 px-4">
         <div
-          className="md:w-1/2"
+          className="md:w-1/2 md:ml-6"
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
@@ -33,7 +33,7 @@ const Skills = () => {
               molestias voluptate aspernatur corrupti atque mollitia perferendis
               commodi sit optio.
             </p>
-            <ul>
+            <ul className="text-lg text-gray-600">
               <li>Web Development</li>
               <li>Web Development</li>
               <li>Web Development</li>
@@ -41,7 +41,7 @@ const Skills = () => {
             </ul>
           </div>
         </div>
-        <div className="md:w-1/2 md:pl-8">
+        <div className="md:w-1/2 md:ml-24">
           <div
             className="flex gap-8 text-5xl "
             data-aos="fade-down"
@@ -83,7 +83,12 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center gap-8 my-6">
+      <p className="flex items-center text-lg text-gray-600 mt-10 mb-4">
+        <FaAngleLeft />
+        Advantages
+        <FaAngleRight />
+      </p>
+      <div className="flex flex-col md:flex-row justify-center gap-8 my-6 px-4">
         <div
           data-aos="fade-up"
           data-aos-duration="1000"

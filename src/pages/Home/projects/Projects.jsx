@@ -23,12 +23,12 @@ const projects = [
 const Projects = () => {
   return (
     <>
-      <p className="flex items-center">
+      <p className="flex items-center text-lg text-gray-600">
         <FaAngleLeft />
         Projects
         <FaAngleRight />
       </p>
-      <div className="flex flex-wrap justify-center gap-8 my-8">
+      <div className="flex flex-wrap justify-center gap-8">
         {projects.map((project) => (
           <div
             key={project.id}
