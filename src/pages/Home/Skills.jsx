@@ -20,24 +20,24 @@ const Skills = () => {
         Skills
         <FaAngleRight />
       </p>
-      <div className="flex flex-col md:flex-row items-center justify-center py-4 px-4">
+      <div className="flex flex-col md:flex-row items-center justify-center pt-8 px-4">
         <div
-          className="md:w-1/2 md:ml-6"
+          className="md:w-1/2 md:ml-6 border-l-2 border-gray-400"
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
-          <div className="text-center md:text-left">
-            <p className="text-lg text-gray-600">
+          <div className="md:text-left pl-4">
+            <p className="text-lg text-gray-600 mb-6">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel unde
               molestias voluptate aspernatur corrupti atque mollitia perferendis
               commodi sit optio.
             </p>
-            <ul className="text-lg text-gray-600">
-              <li>Web Development</li>
-              <li>Web Development</li>
-              <li>Web Development</li>
-              <li>Web Development</li>
+            <ul className="list-disc list-inside text-gray-700 mb-4">
+              <li>Functionality 1</li>
+              <li>Functionality 2</li>
+              <li>Functionality 3</li>
+              {/* Add more functionalities as needed */}
             </ul>
           </div>
         </div>
@@ -92,9 +92,9 @@ const Skills = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="w-full md:w-1/3 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+          className="w-full md:w-1/3 p-6  border border-gray-200 rounded-lg shadow hover:bg-gray-100 "
         >
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-600">
             Noteworthy technology acquisitions 2021
           </h5>
           <p className="font-normal text-gray-700 dark:text-gray-400">
@@ -105,9 +105,9 @@ const Skills = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="2000"
-          className="w-full md:w-1/3 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+          className="w-full md:w-1/3 p-6  border border-gray-200 rounded-lg shadow hover:bg-gray-100 "
         >
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-600">
             Noteworthy technology acquisitions 2021
           </h5>
           <p className="font-normal text-gray-700 dark:text-gray-400">
@@ -118,9 +118,9 @@ const Skills = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="w-full md:w-1/3 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+          className="w-full md:w-1/3 p-6  border border-gray-200 rounded-lg shadow hover:bg-gray-100 "
         >
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-600">
             Noteworthy technology acquisitions 2021
           </h5>
           <p className="font-normal text-gray-700 dark:text-gray-400">

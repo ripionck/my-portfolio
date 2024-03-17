@@ -11,7 +11,9 @@ const Main = () => {
   const { isDarkMode } = useTheme();
 
   return (
-    <div className={`px-24 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
+    <div
+      className={`md:px-24 px-12 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}
+    >
       <Navbar />
       <Outlet />
       <Footer />

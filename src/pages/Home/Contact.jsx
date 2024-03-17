@@ -5,30 +5,35 @@ import { HiDevicePhoneMobile } from 'react-icons/hi2';
 const Contact = () => {
   return (
     <>
-      <p className="flex items-center text-lg text-gray-600">
+      <p
+        id="contact"
+        className="flex items-center text-xl text-gray-600 md:mt-12 mt-8"
+      >
         <FaAngleLeft />
         Contact
         <FaAngleRight />
       </p>
-      <div className="max-w-6xl mx-auto md:flex md:flex-row flex-col items-center justify-between">
+      <div className="max-w-6xl mx-auto md:flex md:flex-row flex-col items-center justify-between md:py-12 py-6">
         {/* Left side: Email and Phone */}
         <div
-          className="w-full md:w-1/2 px-8 mb-8 md:mb-0"
+          className="w-full md:w-1/2 px-8 mb-8 md:mb-0 border-l-2 border-gray-400"
           data-aos="fade-right"
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-600 mb-8">
             Just give me a message whenever and however you want and we will
             start our cooperation.
           </p>
-          <div className="flex items-center mb-4">
-            <MdAttachEmail className="text-xl text-gray-600" />
+          <h2 className="text-lg text-gray-600">EMAIL: </h2>
+          <div className="flex items-center space-x-2 mb-4">
+            <MdAttachEmail className="text-md text-gray-600" />
             <span className="text-gray-600">example@example.com</span>
           </div>
-          <div className="flex items-center">
-            <HiDevicePhoneMobile className="text-xl text-gray-600" />
-            <span className="text-gray-600">+1234567890</span>
+          <h2 className="text-lg text-gray-600">MY PHONE:</h2>
+          <div className="flex items-center space-x-2">
+            <HiDevicePhoneMobile className="text-md text-gray-600" />
+            <span className="text-gray-600">(+880) 1707-884203</span>
           </div>
         </div>
 

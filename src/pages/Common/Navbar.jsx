@@ -1,10 +1,21 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { IoMenu } from 'react-icons/io5';
 import { MdLightMode, MdDarkMode } from 'react-icons/md';
+import { HiOutlineX } from 'react-icons/hi';
 import { ThemeContext } from '../../Layout/ThemeContext';
 
 const Navbar = () => {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   return (
     <nav className="w-full border-b border-gray-200">
@@ -15,17 +26,6 @@ const Navbar = () => {
             className="h-12 w-12"
             alt="R Logo"
           />
-          <div className="flex md:hidden">
-            <button
-              data-collapse-toggle="navbar-sticky"
-              type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-sticky"
-              aria-expanded="false"
-            >
-              <IoMenu className="text-2xl" />
-            </button>
-          </div>
         </div>
 
         <div className="flex items-center justify-center flex-grow">
@@ -36,7 +36,62 @@ const Navbar = () => {
             <ul className="flex flex-row space-x-8">
               <li>
                 <a
-                  href="#"
+                  href="/"
+                  className={`block ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  } transition-colors duration-200 hover:text-blue-500`}
+                  aria-current="page"
+                >
+                  HOME
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  className={`block ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  } transition-colors duration-200 hover:text-blue-500`}
+                >
+                  PROJECTS
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/blogs"
+                  className={`block ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  } transition-colors duration-200 hover:text-blue-500`}
+                >
+                  BLOGS
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className={`block ${
+                    isDarkMode ? 'text-white' : 'text-gray-900'
+                  } transition-colors duration-200 hover:text-blue-500`}
+                >
+                  CONTACT
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        {isDropdownOpen && (
+          <div className="absolute text-center top-0 left-0 w-full bg-gradient-to-b from-gray-200 to-gray-600 p-10 z-50">
+            <button
+              onClick={toggleDropdown}
+              className="text-white focus:outline-none"
+            >
+              <HiOutlineX className="text-2xl" />
+            </button>
+            {/* Dropdown Menu items */}
+            <ul data-aos="fade-up-left" className="mx-auto">
+              <li>
+                <a
+                  href="/"
+                  onClick={closeDropdown}
                   className={`block ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
                   } transition-colors duration-200 hover:text-blue-500`}
@@ -47,7 +102,8 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  onClick={closeDropdown}
+                  href="#projects"
                   className={`block ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
                   } transition-colors duration-200 hover:text-blue-500`}
@@ -57,6 +113,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
+                  onClick={closeDropdown}
                   href="#"
                   className={`block ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
@@ -67,7 +124,8 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  onClick={closeDropdown}
+                  href="#contact"
                   className={`block ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
                   } transition-colors duration-200 hover:text-blue-500`}
@@ -77,9 +135,19 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-        </div>
-
+        )}
         <div className="flex items-center space-x-3">
+          <div className="flex md:hidden">
+            <button
+              onClick={toggleDropdown}
+              type="button"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <IoMenu className="text-2xl" />
+            </button>
+          </div>
           <button onClick={toggleTheme}>
             {isDarkMode ? (
               <MdLightMode className="text-white text-xl" />

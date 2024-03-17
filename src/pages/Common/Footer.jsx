@@ -1,9 +1,6 @@
-import {
-  FaFacebookSquare,
-  FaYoutubeSquare,
-  FaInstagramSquare,
-  FaLinkedin,
-} from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
+import { BsLinkedin } from 'react-icons/bs';
+import { FaGithub } from 'react-icons/fa6';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,32 +12,20 @@ const Footer = () => {
             &copy; {currentYear} Ripion Chakma. All Rights Reserved.
           </p>
           <div>
-            <h2 className="text-white text-center">Follow Me</h2>
+            <h2 className="text-gray-600 text-center text-xl">Find Me</h2>
             <hr />
             <div className="flex lg:space-x-4 md:space-x-4 space-x-2 mt-2">
-              <a
-                className="lg:text-2xl md:text-2xl text-xl text-gray-500"
-                href="https://www.facebook.com"
-              >
-                <FaFacebookSquare />
+              <a className="text-4xl " href="https://twitter.com/RipionC">
+                <FaTwitter className="bg-gray-100 rounded-full p-1.5 text-sky-500" />
               </a>
               <a
-                className="lg:text-2xl md:text-2xl text-xl text-gray-500"
-                href="https://www.instagram.com"
+                className="text-4xl"
+                href="https://www.linkedin.com/in/ripionck/"
               >
-                <FaInstagramSquare />
+                <BsLinkedin className="bg-gray-100 rounded-full p-1.5 text-sky-900" />
               </a>
-              <a
-                className="lg:text-2xl md:text-2xl text-xl text-gray-500"
-                href="https://www.linkedin.com"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                className="lg:text-2xl md:text-2xl text-xl text-gray-500"
-                href="https://www.youtube.com"
-              >
-                <FaYoutubeSquare />
+              <a className="text-4xl" href="https://github.com/ripionck">
+                <FaGithub className="bg-gray-100 rounded-full p-1.5 text-black" />
               </a>
             </div>
           </div>
