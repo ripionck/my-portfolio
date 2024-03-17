@@ -1,4 +1,4 @@
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
+import { FaAngleLeft, FaAngleRight, FaBusinessTime } from 'react-icons/fa6';
 import { FaHtml5, FaReact, FaPython, FaGitAlt } from 'react-icons/fa';
 import { MdCss } from 'react-icons/md';
 import {
@@ -8,6 +8,8 @@ import {
   SiMysql,
   SiPostman,
 } from 'react-icons/si';
+import { GiSatelliteCommunication } from 'react-icons/gi';
+import { MdPrivacyTip } from 'react-icons/md';
 import { RiJavascriptFill } from 'react-icons/ri';
 import { TbSql } from 'react-icons/tb';
 import { BiLogoPostgresql } from 'react-icons/bi';
@@ -15,33 +17,35 @@ import { BiLogoPostgresql } from 'react-icons/bi';
 const Skills = () => {
   return (
     <>
-      <p className="flex items-center text-lg text-gray-600">
+      <p className="flex items-center text-lg text-gray-500 mt-6">
         <FaAngleLeft />
         Skills
         <FaAngleRight />
       </p>
       <div className="flex flex-col md:flex-row items-center justify-center pt-8 px-4">
         <div
-          className="md:w-1/2 md:ml-6 border-l-2 border-gray-400"
+          className="md:w-1/2 md:ml-2 border-l-2 border-gray-400"
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
-          <div className="md:text-left pl-4">
-            <p className="text-lg text-gray-600 mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel unde
-              molestias voluptate aspernatur corrupti atque mollitia perferendis
-              commodi sit optio.
+          <div className="md:text-left pl-4 md:pr-16">
+            <p className="text-lg text-gray-500 mb-6">
+              My technical skillset is focused on Backend development, with
+              comfort in languages like Python, JavaScript, and SQL, alongside
+              essential web development tools like HTML, Django, Django REST
+              Framework, React, Bootstrap, and Tailwind CSS. I&apos;m also
+              well-versed in version control using Git and GitHub, and utilize
+              tools like Postman for API testing.
             </p>
-            <ul className="list-disc list-inside text-gray-700 mb-4">
-              <li>Functionality 1</li>
-              <li>Functionality 2</li>
-              <li>Functionality 3</li>
-              {/* Add more functionalities as needed */}
+            <ul className="list-disc list-inside text-gray-500">
+              <li>Web App Development</li>
+              <li>API Development</li>
+              <li>Database Development</li>
             </ul>
           </div>
         </div>
-        <div className="md:w-1/2 md:ml-24">
+        <div className="md:w-1/2 md:pl-12 pt-8 md:pt-0">
           <div
             className="flex gap-8 text-5xl "
             data-aos="fade-down"
@@ -83,7 +87,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <p className="flex items-center text-lg text-gray-600 mt-10 mb-4">
+      <p className="flex items-center text-lg text-gray-500 md:mt-16 mt-10 mb-4">
         <FaAngleLeft />
         Advantages
         <FaAngleRight />
@@ -94,12 +98,15 @@ const Skills = () => {
           data-aos-duration="1000"
           className="w-full md:w-1/3 p-6  border border-gray-200 rounded-lg shadow hover:bg-gray-100 "
         >
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-600">
-            Noteworthy technology acquisitions 2021
+          <p className="flex justify-center text-2xl">
+            <GiSatelliteCommunication />
+          </p>
+          <h5 className="mb-2 text-xl text-center tracking-tight text-gray-500">
+            Communication
           </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+          <p className="font-normal text-center text-gray-500">
+            I micely reply to your messages during our work, since I am online
+            most of the time, so cooperation is productive.
           </p>
         </div>
         <div
@@ -107,12 +114,15 @@ const Skills = () => {
           data-aos-duration="2000"
           className="w-full md:w-1/3 p-6  border border-gray-200 rounded-lg shadow hover:bg-gray-100 "
         >
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-600">
-            Noteworthy technology acquisitions 2021
+          <p className="flex justify-center text-2xl">
+            <FaBusinessTime />
+          </p>
+          <h5 className="mb-2 text-xl text-center tracking-tight text-gray-500">
+            Business Awareness
           </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+          <p className="font-normal text-center text-gray-500">
+            Immersing in your business model. I can realize a project the way a
+            client wants to see it, not just a developer.
           </p>
         </div>
         <div
@@ -120,12 +130,15 @@ const Skills = () => {
           data-aos-duration="3000"
           className="w-full md:w-1/3 p-6  border border-gray-200 rounded-lg shadow hover:bg-gray-100 "
         >
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-600">
-            Noteworthy technology acquisitions 2021
+          <p className="flex justify-center text-2xl">
+            <MdPrivacyTip />
+          </p>
+          <h5 className="mb-2 text-xl text-center tracking-tight text-gray-500">
+            Privacy
           </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+          <p className="font-normal text-center text-gray-500 ">
+            Some projects have unique properties that shouldn&apos;t be public
+            until the end of Implementation or even after.
           </p>
         </div>
       </div>

@@ -7,13 +7,13 @@ const Projects = () => {
     <>
       <p
         id="projects"
-        className="flex items-center text-lg text-gray-600 md:pt-16 mt-8 mb-6"
+        className="flex items-center justify-center text-xl text-gray-600 md:pt-16 mt-8 mb-6"
       >
         <FaAngleLeft />
         Projects
         <FaAngleRight />
       </p>
-      <div className="flex flex-wrap justify-center gap-8 border-t border-b border-gray-400 py-8">
+      <div className="flex flex-wrap justify-center gap-8 border-t border-b border-gray-400 py-12">
         <div
           className="w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-md shadow pb-4"
           style={{ height: 'auto' }}
@@ -55,7 +55,7 @@ const Projects = () => {
           </div>
         </div>
         <div
-          className="w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-md shadow"
+          className="w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-md shadow pb-4"
           style={{ height: 'auto' }}
           data-aos="fade-up"
           data-aos-duration="3000"

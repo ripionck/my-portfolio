@@ -14,37 +14,37 @@ const Contact = () => {
         <FaAngleRight />
       </p>
       <div className="max-w-6xl mx-auto md:flex md:flex-row flex-col items-center justify-between md:py-12 py-6">
-        {/* Left side: Email and Phone */}
+        {/* ---------------Email and Phone----------------- */}
         <div
           className="w-full md:w-1/2 px-8 mb-8 md:mb-0 border-l-2 border-gray-400"
           data-aos="fade-right"
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-lg text-gray-500 mb-8">
             Just give me a message whenever and however you want and we will
             start our cooperation.
           </p>
-          <h2 className="text-lg text-gray-600">EMAIL: </h2>
+          <h2 className="text-lg text-gray-500">EMAIL: </h2>
           <div className="flex items-center space-x-2 mb-4">
-            <MdAttachEmail className="text-md text-gray-600" />
-            <span className="text-gray-600">example@example.com</span>
+            <MdAttachEmail className="text-md text-gray-500" />
+            <span className="text-gray-500">ripion.chakmar@gmail.com</span>
           </div>
-          <h2 className="text-lg text-gray-600">MY PHONE:</h2>
+          <h2 className="text-lg text-gray-500">MY PHONE:</h2>
           <div className="flex items-center space-x-2">
-            <HiDevicePhoneMobile className="text-md text-gray-600" />
-            <span className="text-gray-600">(+880) 1707-884203</span>
+            <HiDevicePhoneMobile className="text-md text-gray-500" />
+            <span className="text-gray-500">(+880) 1707-884203</span>
           </div>
         </div>
 
-        {/* Right side: Contact Form */}
+        {/* ------------Contact Form---------------- */}
         <div
           className="w-full md:w-1/2 px-8"
           data-aos="fade-left"
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
-          <form className="space-y-4">
+          <form className="space-y-4 md:pt-6">
             <div className="relative z-0">
               <input
                 type="text"

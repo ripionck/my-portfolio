@@ -7,17 +7,17 @@ const ELit = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Side: Description, Functionalities, Source Code */}
           <div>
-            <h2 className="text-gray-600 text-2xl font-semibold mb-4">
+            <h2 className="text-gray-500 text-2xl font-semibold mb-4">
               Project Description
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-500 mb-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               euismod pulvinar lorem, vitae lobortis eros interdum at.
             </p>
-            <h2 className="text-gray-600 text-2xl font-semibold mb-4">
+            <h2 className="text-gray-500 text-2xl font-semibold mb-4">
               Functionalities
             </h2>
-            <ul className="list-disc list-inside text-gray-600 mb-4">
+            <ul className="list-disc list-inside text-gray-500 mb-4">
               <li>
                 Developed a secure user registration system with email
                 verification for account activation.
@@ -37,7 +37,7 @@ const ELit = () => {
             </ul>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/example"
+                href="https://github.com/ripionck/e-Lit-client"
                 className="flex items-center gap-2 text-blue-500 hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -45,7 +45,7 @@ const ELit = () => {
                 Front-end Code <FaGithub className="text-2xl" />
               </a>
               <a
-                href="https://github.com/example"
+                href="https://github.com/ripionck/e-Lit-api"
                 className="flex items-center gap-2 text-blue-500 hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"

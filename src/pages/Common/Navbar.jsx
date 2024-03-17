@@ -47,7 +47,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#projects"
+                  href="/#projects"
                   className={`block ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
                   } transition-colors duration-200 hover:text-blue-500`}
@@ -67,7 +67,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="/#contact"
                   className={`block ${
                     isDarkMode ? 'text-white' : 'text-gray-900'
                   } transition-colors duration-200 hover:text-blue-500`}
@@ -79,7 +79,7 @@ const Navbar = () => {
           </div>
         </div>
         {isDropdownOpen && (
-          <div className="absolute text-center top-0 left-0 w-full bg-gradient-to-b from-gray-200 to-gray-600 p-10 z-50">
+          <div className="absolute text-center top-0 left-0 w-full bg-gradient-to-b from-gray-600 to-gray-900 p-10 z-50">
             <button
               onClick={toggleDropdown}
               className="text-white focus:outline-none"
@@ -141,7 +141,7 @@ const Navbar = () => {
             <button
               onClick={toggleDropdown}
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:text-gray-100  focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="navbar-sticky"
               aria-expanded="false"
             >
