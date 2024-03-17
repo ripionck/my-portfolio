@@ -44,12 +44,17 @@ const Contact = () => {
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
-          <form className="space-y-4 md:pt-6">
+          <form
+            className="space-y-4 md:pt-6"
+            action="https://formspree.io/f/mwkgnvwk"
+            method="POST"
+          >
             <div className="relative z-0">
               <input
                 type="text"
                 id="name"
-                className="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                name="name"
+                className="block py-2.5 pl-2 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
               />
               <label
@@ -63,7 +68,8 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
-                className="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                name="email"
+                className="block py-2.5 pl-2 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
               />
               <label
@@ -76,8 +82,9 @@ const Contact = () => {
             <div className="relative z-0">
               <textarea
                 id="message"
+                name="message"
                 rows="4"
-                className="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="block py-2.5 pl-2 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
               />
               <label
