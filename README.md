@@ -1,3 +1,3 @@
 ## Portfolio Website
 
-[(https://ripion-chakma.netlify.app/)]
+(https://ripion-chakma.netlify.app/)
