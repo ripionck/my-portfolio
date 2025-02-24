@@ -15,7 +15,7 @@ const Projects = () => {
       </p>
       <div className="flex flex-wrap justify-center gap-8 border-t border-b border-gray-400 py-12">
         <div
-          className="w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-md shadow pb-4"
+          className="w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-md shadow-sm pb-4"
           style={{ height: 'auto' }}
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -42,20 +42,20 @@ const Projects = () => {
             <a
               href="https://metro-express.onrender.com/"
               target="_blank"
-              className="border border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500  py-1 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="border border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500  py-1 px-4 rounded-sm focus:outline-hidden focus:shadow-outline"
             >
               Live Link
             </a>
             <a
               href="/metro-express"
-              className="border bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:text-gray-100 py-1 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="border bg-linear-to-r from-purple-400 via-pink-500 to-red-500 hover:text-gray-100 py-1 px-4 rounded-sm focus:outline-hidden focus:shadow-outline"
             >
               Details
             </a>
           </div>
         </div>
         <div
-          className="w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-md shadow pb-4"
+          className="w-full md:w-1/3 max-w-sm bg-white border border-gray-200 rounded-md shadow-sm pb-4"
           style={{ height: 'auto' }}
           data-aos="fade-up"
           data-aos-duration="3000"
@@ -86,13 +86,13 @@ const Projects = () => {
             <a
               href="https://e-lit-emporium.netlify.app/"
               target="_blank"
-              className="border border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500  py-1 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="border border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500  py-1 px-4 rounded-sm focus:outline-hidden focus:shadow-outline"
             >
               Live Link
             </a>
             <a
               href="/e-Lit_emporium"
-              className="border bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 hover:text-gray-100 py-1 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="border bg-linear-to-r from-purple-400 via-pink-500 to-red-500 hover:text-gray-100 py-1 px-4 rounded-sm focus:outline-hidden focus:shadow-outline"
             >
               Details
             </a>

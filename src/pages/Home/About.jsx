@@ -25,7 +25,7 @@ const About = () => {
             <a
               href="https://drive.google.com/file/d/1Ongt5X4NlSCAaQldiiRr-jV4q1ygwLHR/view?usp=sharing"
               target="_blank"
-              className="border border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500  py-2 px-6 rounded focus:outline-none focus:shadow-outline "
+              className="border border-blue-500 hover:bg-blue-500 hover:text-white text-blue-500  py-2 px-6 rounded-sm focus:outline-hidden focus:shadow-outline "
             >
               Resume
             </a>

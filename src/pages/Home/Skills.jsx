@@ -96,7 +96,7 @@ const Skills = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="w-full md:w-1/3 p-6  border border-gray-200 rounded-lg shadow hover:bg-gray-100 "
+          className="w-full md:w-1/3 p-6  border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 "
         >
           <p className="flex justify-center text-2xl">
             <GiSatelliteCommunication />
@@ -112,7 +112,7 @@ const Skills = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="2000"
-          className="w-full md:w-1/3 p-6  border border-gray-200 rounded-lg shadow hover:bg-gray-100 "
+          className="w-full md:w-1/3 p-6  border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 "
         >
           <p className="flex justify-center text-2xl">
             <FaBusinessTime />
@@ -128,7 +128,7 @@ const Skills = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="w-full md:w-1/3 p-6  border border-gray-200 rounded-lg shadow hover:bg-gray-100 "
+          className="w-full md:w-1/3 p-6  border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 "
         >
           <p className="flex justify-center text-2xl">
             <MdPrivacyTip />
