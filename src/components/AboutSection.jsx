@@ -17,10 +17,12 @@ const AboutSection = () => {
               <ChevronLast />
             </p>
             <p className="text-lg text-gray-500 mt-4 mb-6">
-              My name is Ripion Chakma. I&apos;m a Backend Developer from
-              Bangladesh. My passion for clean code and problem-solving drives
-              me to create seamless experiences for users, from the server to
-              the screen.
+              <strong className="text-xl">Backend Developer</strong> passionate
+              about clean code and scalable solutions. I craft robust systems
+              that bridge server-side logic with seamless user experiences,
+              solving complex challenges with efficiency. Focused on building
+              intuitive, high-performance architectures that empower
+              applications from core infrastructure to the user interface.
             </p>
             <a
               href="https://drive.google.com/file/d/1Ongt5X4NlSCAaQldiiRr-jV4q1ygwLHR/view?usp=sharing"

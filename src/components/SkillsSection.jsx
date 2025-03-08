@@ -31,17 +31,18 @@ const SkillsSection = () => {
         >
           <div className="md:text-left pl-4 md:pr-16">
             <p className="text-lg text-gray-500 mb-6">
-              My technical skillset is focused on Backend development, with
-              comfort in languages like Python, JavaScript, and SQL, alongside
-              essential web development tools like HTML, Django, Django REST
-              Framework, React, Bootstrap, and Tailwind CSS. I&apos;m also
-              well-versed in version control using Git and GitHub, and utilize
-              tools like Postman for API testing.
+              <b>Technical Skills :</b> Proficient in Python, JavaScript, and
+              SQL, with expertise in backend frameworks (Django, Django REST
+              Framework) and frontend tools (React, Bootstrap, Tailwind CSS).
+              Experienced in version control (Git/GitHub) and API testing
+              (Postman). Skilled in building scalable web solutions, ensuring
+              robust server-side logic and seamless integration across
+              full-stack environments.
             </p>
             <ul className="list-disc list-inside text-gray-500">
-              <li>Web App Development</li>
-              <li>API Development</li>
-              <li>Database Development</li>
+              <li>Web Application Development</li>
+              <li>API Design & Development</li>
+              <li>Database Architecture & Management</li>
             </ul>
           </div>
         </div>

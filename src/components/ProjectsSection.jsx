@@ -2,20 +2,20 @@ import { ChevronFirst, ChevronLast, ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'E-Commerce Dashboard',
+    title: 'FinTrack',
     description:
-      'A full-stack e-commerce dashboard with real-time analytics, inventory management, and order processing. Features include user authentication, role-based access control, and responsive design.',
-    image: 'https://via.placeholder.com/800x600',
+      'FinTrack is a personal finance app enabling real-time transaction tracking, budget management, and advanced analytics through interactive charts. It offers secure authentication, dynamic transaction categorization, custom financial notifications, and profile customization. Users can monitor spending, set budgets, and visualize financial trends effectively, ensuring organized and informed money management.',
+    image: '/FinanceTrack.png',
     tech: ['React', 'Node.js', 'MongoDB', 'Express', 'Tailwind CSS'],
-    liveLink: 'https://dashboard-demo.com',
+    liveLink: 'https://fin-track-azure.vercel.app/',
     githubLink: 'https://github.com/johndoe/dashboard',
   },
   {
-    title: 'Task Management App',
+    title: 'ShopEase',
     description:
-      'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features. Includes project tracking and deadline management.',
-    image: 'https://via.placeholder.com/800x600',
-    tech: ['React', 'Firebase', 'Material-UI', 'Redux'],
+      'ShopEase is a modern e-commerce platform enabling seamless product browsing, cart/wishlist management, and order tracking. Features include user authentication, category-based searches, reviews, and a user-friendly interface for efficient shopping. Users can manage orders, track statuses, and access purchase history, ensuring a streamlined and intuitive retail experience.',
+    image: '/ShopEase.png',
+    tech: ['React', 'Tailwind CSS', 'Django DRF', 'PostgreSQL', 'Redis'],
     liveLink: 'https://tasks-app-demo.com',
     githubLink: 'https://github.com/johndoe/tasks-app',
   },
@@ -66,7 +66,7 @@ const ProjectsSection = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-64 md:h-96 object-cover hover:scale-105 transition-transform duration-500"
+                className="w-full h-64 md:h-96 hover:scale-105 transition-transform duration-500"
               />
             </div>
 
