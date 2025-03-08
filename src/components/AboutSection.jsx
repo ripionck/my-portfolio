@@ -1,6 +1,6 @@
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
+import { ChevronFirst, ChevronLast } from 'lucide-react';
 
-const About = () => {
+const AboutSection = () => {
   return (
     <>
       <div className="flex flex-col-reverse md:flex-row items-center justify-center py-8 px-4">
@@ -11,10 +11,10 @@ const About = () => {
             data-aos-easing="linear"
             data-aos-duration="1500"
           >
-            <p className="flex items-center text-lg text-gray-600 md:pt-0 pt-6">
-              <FaAngleLeft />
+            <p className="flex justify-start items-center text-lg text-gray-600 md:pt-0 pt-6">
+              <ChevronFirst />
               Hello, World
-              <FaAngleRight />
+              <ChevronLast />
             </p>
             <p className="text-lg text-gray-500 mt-4 mb-6">
               My name is Ripion Chakma. I&apos;m a Backend Developer from
@@ -49,4 +49,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutSection;

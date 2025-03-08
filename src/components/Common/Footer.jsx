@@ -1,6 +1,4 @@
-import { FaTwitter } from 'react-icons/fa';
-import { BsLinkedin } from 'react-icons/bs';
-import { FaGithub } from 'react-icons/fa6';
+import { Github, Linkedin, Twitter } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,16 +14,16 @@ const Footer = () => {
             <hr />
             <div className="flex lg:space-x-4 md:space-x-4 space-x-2 mt-2">
               <a className="text-4xl " href="https://twitter.com/RipionC">
-                <FaTwitter className="bg-gray-100 rounded-full p-1.5 text-sky-500" />
+                <Twitter className="bg-gray-100 rounded-full p-1.5 text-sky-500" />
               </a>
               <a
                 className="text-4xl"
                 href="https://www.linkedin.com/in/ripionck/"
               >
-                <BsLinkedin className="bg-gray-100 rounded-full p-1.5 text-sky-900" />
+                <Linkedin className="bg-gray-100 rounded-full p-1.5 text-sky-900" />
               </a>
               <a className="text-4xl" href="https://github.com/ripionck">
-                <FaGithub className="bg-gray-100 rounded-full p-1.5 text-black" />
+                <Github className="bg-gray-100 rounded-full p-1.5 text-black" />
               </a>
             </div>
           </div>

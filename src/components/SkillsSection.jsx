@@ -1,26 +1,26 @@
-import { FaAngleLeft, FaAngleRight, FaBusinessTime } from 'react-icons/fa6';
-import { FaHtml5, FaReact, FaPython, FaGitAlt } from 'react-icons/fa';
-import { MdCss } from 'react-icons/md';
+import { ChevronFirst, ChevronLast } from 'lucide-react';
+import { BiLogoPostgresql } from 'react-icons/bi';
+import { FaGitAlt, FaHtml5, FaPython, FaReact } from 'react-icons/fa';
+import { FaBusinessTime } from 'react-icons/fa6';
+import { GiSatelliteCommunication } from 'react-icons/gi';
+import { MdCss, MdPrivacyTip } from 'react-icons/md';
+import { RiJavascriptFill } from 'react-icons/ri';
 import {
   SiCplusplus,
-  SiTailwindcss,
   SiDjango,
   SiMysql,
   SiPostman,
+  SiTailwindcss,
 } from 'react-icons/si';
-import { GiSatelliteCommunication } from 'react-icons/gi';
-import { MdPrivacyTip } from 'react-icons/md';
-import { RiJavascriptFill } from 'react-icons/ri';
 import { TbSql } from 'react-icons/tb';
-import { BiLogoPostgresql } from 'react-icons/bi';
 
-const Skills = () => {
+const SkillsSection = () => {
   return (
     <>
-      <p className="flex items-center text-lg text-gray-500 mt-6">
-        <FaAngleLeft />
-        Skills
-        <FaAngleRight />
+      <p className="flex justify-start items-center text-lg text-gray-500 mt-6">
+        <ChevronFirst />
+        <span className="mx-2"> Skills</span>
+        <ChevronLast />
       </p>
       <div className="flex flex-col md:flex-row items-center justify-center pt-8 px-4">
         <div
@@ -87,10 +87,10 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <p className="flex items-center text-lg text-gray-500 md:mt-16 mt-10 mb-4">
-        <FaAngleLeft />
-        Advantages
-        <FaAngleRight />
+      <p className="flex justify-start items-center text-lg text-gray-500 md:mt-16 mt-10 mb-4">
+        <ChevronFirst />
+        <span className="mx-2">Advantages</span>
+        <ChevronLast />
       </p>
       <div className="flex flex-col md:flex-row justify-center gap-8 my-6 px-4">
         <div
@@ -146,4 +146,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SkillsSection;

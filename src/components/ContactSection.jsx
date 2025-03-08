@@ -1,17 +1,17 @@
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
-import { MdAttachEmail } from 'react-icons/md';
+import { ChevronFirst, ChevronLast } from 'lucide-react';
 import { HiDevicePhoneMobile } from 'react-icons/hi2';
+import { MdAttachEmail } from 'react-icons/md';
 
-const Contact = () => {
+const ContactSection = () => {
   return (
     <>
       <p
         id="contact"
-        className="flex items-center text-xl text-gray-600 md:mt-12 mt-8"
+        className="flex justify-start items-center text-xl text-gray-600 md:mt-12 mt-8"
       >
-        <FaAngleLeft />
-        Contact
-        <FaAngleRight />
+        <ChevronFirst />
+        <span className="mx-2"> Contact Me</span>
+        <ChevronLast />
       </p>
       <div className="max-w-6xl mx-auto md:flex md:flex-row flex-col items-center justify-between md:py-12 py-6">
         {/* ---------------Email and Phone----------------- */}
@@ -109,4 +109,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactSection;

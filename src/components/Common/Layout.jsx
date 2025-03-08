@@ -1,13 +1,13 @@
-import { Outlet } from 'react-router-dom';
-import Navbar from '../pages/Common/Navbar';
-import Footer from '../pages/Common/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useTheme } from './ThemeContext';
+import { Outlet } from 'react-router-dom';
+import { useTheme } from '../../context/theme-context';
+import Footer from './Footer';
+import Navbar from './Navbar';
 
 AOS.init();
 
-const Main = () => {
+const Layout = () => {
   const { isDarkMode } = useTheme();
 
   return (
@@ -21,4 +21,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Layout;

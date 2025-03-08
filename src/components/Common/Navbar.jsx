@@ -1,12 +1,9 @@
-import { useContext, useState } from 'react';
-import { IoMenu } from 'react-icons/io5';
-import { MdLightMode, MdDarkMode } from 'react-icons/md';
-import { HiOutlineX } from 'react-icons/hi';
-import { ThemeContext } from '../../Layout/ThemeContext';
+import { Menu, Moon, Sun, X } from 'lucide-react';
+import { useState } from 'react';
+import { useTheme } from '../../context/theme-context';
 
 const Navbar = () => {
-  const { isDarkMode, toggleTheme } = useContext(ThemeContext);
-
+  const { isDarkMode, toggleTheme } = useTheme();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const closeDropdown = () => {
@@ -84,7 +81,7 @@ const Navbar = () => {
               onClick={toggleDropdown}
               className="text-white focus:outline-hidden"
             >
-              <HiOutlineX className="text-2xl" />
+              <X />
             </button>
             {/* Dropdown Menu items */}
             <ul data-aos="fade-up-left" className="mx-auto">
@@ -145,15 +142,11 @@ const Navbar = () => {
               aria-controls="navbar-sticky"
               aria-expanded="false"
             >
-              <IoMenu className="text-2xl" />
+              <Menu />
             </button>
           </div>
           <button onClick={toggleTheme}>
-            {isDarkMode ? (
-              <MdLightMode className="text-white text-xl" />
-            ) : (
-              <MdDarkMode />
-            )}
+            {isDarkMode ? <Moon className="text-gray-300" /> : <Sun />}
           </button>
         </div>
       </div>
